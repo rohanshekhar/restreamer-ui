@@ -159,7 +159,7 @@ const createInputs = (settings, config, skills) => {
 		input.address = addUsernamePassword(input.address, settings.username, settings.password);
 
 		if (protocol === 'rtsp') {
-			input.options.push('-stimeout', settings.rtsp.stimeout);
+			input.options.push('-timeout', settings.rtsp.stimeout);
 
 			if (settings.rtsp.udp === true) {
 				input.options.push('-rtsp_transport', 'udp');
