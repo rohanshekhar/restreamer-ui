@@ -9,7 +9,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 import RestreamerUI from './RestreamerUI';
 
-let address = window.location.protocol + '//' + window.location.host;
+let address = window.location.protocol + '//' + window.location.host + '/' + window.location.pathname.split('/')[1];
 
 const urlParams = new URLSearchParams(window.location.search.substring(1));
 if (urlParams.has('address') === true) {
